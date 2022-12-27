@@ -23,6 +23,7 @@ function Subreddit() {
 
     }, [id]);
 
+    if (!post) return null;
 
     return (
         <>
