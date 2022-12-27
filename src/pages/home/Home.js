@@ -41,8 +41,7 @@ const Home = () => {
 
                         {/*<article className='innercontainer-link' key={posts.data.id}>*/}
 
-                        {Object.keys(posts).length > 0 &&
-                            <>{posts.map((post) => {
+                        {posts.map((post) => {
                                 return (
                                     <article className='innercontainer-link' key={post.data.id}>
 
@@ -56,8 +55,6 @@ const Home = () => {
                                     </article>
                                 )
                             })}
-                            </>
-                        }
 
                     </section>
                 </main>
