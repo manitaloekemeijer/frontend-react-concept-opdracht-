@@ -4,7 +4,7 @@ import axios from "axios";
 import Navigation from "../../components/navigation/Navigation";
 
 function Subreddit() {
-    const [post, setPost] = useState([]);
+    const [post, setPost] = useState();
     const {id} = useParams();
     console.log(id);
 
